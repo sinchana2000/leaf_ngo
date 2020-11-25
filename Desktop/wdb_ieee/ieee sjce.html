@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+  <head>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      IEEE SJCE
+    </title>
+    
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    
+    <link rel="stylesheet"
+		  type="text/css"
+		  href="bootstrap.css"
+	      />
+
+	<link rel="stylesheet"
+		  type="text/css"
+		  href="style.css"
+	      />
+
+  </head>
+
+  <body>
+ <div class="upl">
+   <div > 
+        <a 
+		href="index.html" >
+			Home
+		</a>
+		 &nbsp;
+		<a 
+		href="aboutme.html"  >
+			Boards
+		</a>
+		&nbsp;
+		<a 
+		href="contact.html" >
+			Societies
+		</a>
+        &nbsp;
+		<a 
+		href="contact.html" >
+			Team
+		</a>
+        &nbsp;
+		<a 
+		href="contact.html" >
+			Gallery
+		</a>
+    </div>
+		<h1>
+			<img src="emblem.png" class="emb"/>
+  	         IEEE SJCE
+        </h1>
+  </div>
+  
+
+      
+
+
+  <div class="container">
+  	
+
+   <img src="mainpgf.png" style="width:100%;">
+
+    <div class="content">
+
+        <h2>Welcome To IEEE SJCE</h2>
+
+    		<p>IEEE is a global community to innovate for a better tomorrow and is a trusted voice for engineering <br>
+    	       and technology around the globe.<br>
+
+      			<h3>Experience the joy of learning with IEEE SJCE.</h3>
+
+    		</p>
+    </div>
+
+ </div>
+ &nbsp;
+
+ <div class="eventbg">
+
+  <h4> EVENTS</h4>
+
+  <p class="eventp">IEEE conducts many frequently for students to gain knowledge and encourages students to take active part in all of them. Learn! Achieve! Inspire!<br>
+  	<br>
+  </p>
+  &nbsp;
+
+ </div>
+
+<div class="row">
+			<div class="col-md-2">
+				<img id="image1" class="crop-img" src="robotics'12.jpeg" /> 
+			</div>
+
+			<div class="col-md-2">
+				<img id="image2" class="crop-img" src="callfa.jpeg" /> 
+			</div>
+			<div class="col-md-2">
+				<img id="image3" class="crop-img" src="tuxedo.jpeg" /> 
+			</div>
+			<div class="col-md-2">
+				<img id="image4" class="crop-img" src="pariyojana.png" /> 
+			</div>
+			<div class="col-md-2">
+				<img id="image5" class="crop-img" src="snap_ckts.jpeg" /> 
+			</div>
+			<div class="col-md-2">
+				<img id="image6" class="crop-img" src="orientation.jpeg" /> 
+			</div>
+			
+
+</div>
+
+
+		<div class="row">
+			<div class="col-md-2">
+				<button id="backward">&lt;</button>
+			</div>
+			<div class="col-md-8">
+				<img id="bigImage" class="large-img" src="img_1.jpg" alt="graffittied building"/> 
+			</div>
+			<div class="col-md-2">
+				<button id="forward">&gt;</button>
+			</div>
+		</div>
+</div>
+
+	<script>
+		
+		var paused = false;
+
+		$(".crop-img").click(function(){
+			$("#bigImage").attr('src', 
+				$(this).attr('src'));
+		});
+		var counter = 1;
+	
+		$("#image"+counter).click();
+
+		
+		$("#backward").click(function (){
+			
+			counter = counter - 1;
+			
+			if(counter < 1){
+				counter = 6;
+			}
+		
+			$("#image"+counter).click();
+		});
+
+	
+		$("#forward").click(function (){
+		
+			counter = counter + 1;
+			
+			if(counter > 6){
+				counter = 1;
+			}
+			
+			$("#image"+counter).click();
+		});
+
+		$("#bigImage").click(function (){
+			paused = !paused;
+		});
+
+		setInterval(function (){
+			
+			if(!paused){
+				
+				$("#forward").click();
+			};
+		}, 3000);
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

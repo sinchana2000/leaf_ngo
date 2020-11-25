@@ -1,0 +1,110 @@
+  h1{
+  	
+  	color: white;
+  
+  	background-color: black;
+  	
+  	font-style:Alegreya Sans;
+  
+    font-size: 400%;
+  
+    text-align: left;
+
+    border-bottom: 5px solid gray;
+     
+  }
+.emb{
+  max-height:70px;
+  max-width:60%;
+ }
+
+ .upl{
+ 	text-align: right;
+ 	font-size: 150%;
+ 	font-style: sans-serif;
+ 	background-size: 200% 200%;
+ 	background-color: black;
+ 	color: white;
+ }
+
+
+ body, html {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  max-width: 1400px;
+  margin:0;
+  background-color: black;
+  background-size: cover ;
+}
+
+.container img {vertical-align: cover;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 1140px;
+  padding: 158px;
+}
+
+.crop-img{
+  max-height:150px;
+  max-width:100%;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 5px solid white;
+}
+
+
+.large-img{
+  max-width:70%;
+  margin-top: 10px;
+  background-color: #f4e2d8;
+  background-size: content;
+}
+
+.row{
+	background-color: black;
+	background-size: content;
+}
+
+
+h4{
+	font-family:  Arial, Helvetica, sans-serif;
+    font-size: 250%;
+     color: white ;
+    text-shadow: 2px 2px 8px #4ca1af;
+    text-align: center;
+    border-top: 5px solid black
+}
+
+.eventp{
+	font-family:   Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    color: white;
+    text-shadow: 2px 2px 8px #4ca1af;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+.eventbg{
+	background-color:black;
+	background-size: content;
+}
