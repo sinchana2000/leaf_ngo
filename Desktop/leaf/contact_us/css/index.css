@@ -1,0 +1,11 @@
+
+.bodybg{
+
+    background: url("https://aljafran-law.com/wp-content/uploads/2019/09/1553714785508_bigstock_male_lawyer_or_judge_working_w_271058272.jpg")
+    fixed;
+  background-size: cover;
+}
+
+.second{
+    background-color: beige !important;
+}
